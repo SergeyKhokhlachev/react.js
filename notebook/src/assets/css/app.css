@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'proximanova-regular';
+    src: url('../fonts/proximanova-regular.eot');
+    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular.woff') format('woff'),
+         url('../fonts/proximanova-regular.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'proximanova-regular';
+	font-size: 16px;
+	color: #757575;
+	background-color: #E0E0E0;
+	overflow-y: scroll;
+}
+.text-center{
+	text-align: center;
+}
+
+.notepad-wrap {
+	max-width: 1240px;
+	min-width: 400px;
+	padding: 15px;
+	margin: 60px auto;
+}
+@media (max-width: 426px) {
+	.notepad-wrap {
+		margin: 10px auto;
+	}
+}
+
+

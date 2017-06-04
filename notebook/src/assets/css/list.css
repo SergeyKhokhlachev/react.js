@@ -1,0 +1,115 @@
+.note-contain .note-ell {
+	background-color: #fff;
+	-webkit-transition: all 300ms ease-in-out;
+  	        transition: all 300ms ease-in-out;
+}
+
+.note-contain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.note-contain .note-ell {
+	position: relative;
+	flex-basis: calc(33.33% - 30px);
+	margin: 20px 15px;
+	padding-bottom: 30px;
+	min-height: 180px;
+}
+@media (max-width: 1024px) {
+	.note-contain .note-ell {flex-basis: calc(50% - 30px);}
+}
+@media (max-width: 769px) {
+	.note-contain .note-ell {flex-basis: calc(100% - 20px);margin: 20px 10px;}
+}
+
+
+.note-contain.flex-coll {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+}
+.note-contain.flex-coll .note-ell {
+	margin: 20px 15px;
+	min-height: 100px;
+}
+
+
+.note-ell .item-head{
+	position: relative;
+	padding: 10px 15px;
+	color: #fff;
+	background-color: #607D8B;
+}
+.note-ell .item-head .item-header{
+	margin: 0;
+}
+.note-ell .item-head .item-icon{
+	position: absolute;
+	right: -10px;
+	top: -15px;
+}
+.note-ell .item-head .item-icon i{
+	margin: 0 3px;
+	color: #fff;
+	background-color: #009688;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease-in-out;
+  	        transition: all 200ms ease-in-out;
+}
+.note-ell .item-head .item-icon i:hover{
+	background-color: #006064;
+}
+.note-ell .item-content{
+	padding: 15px;
+}
+
+.note-ell .item-foot{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 30px;
+	padding: 0 15px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #B2B2B2;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.note-ell .item-foot .item-more{
+	float: right;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease-in-out;
+  	        transition: all 200ms ease-in-out;
+}
+.note-ell .item-foot .item-more:hover{
+	color: #828282;
+}
+
+.note-new{
+	position: relative;
+	opacity: 0.3;
+	cursor: pointer;
+}
+.note-new:hover {
+	opacity: 0.8;
+}
+.note-new .new-add{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 50px;
+	color: #9E9E9E;
+
+	-webkit-transform: translate(-50%, -50%);
+   	       	transform: translate(-50%, -50%);
+}
